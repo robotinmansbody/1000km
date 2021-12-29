@@ -1,0 +1,163 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	margin: 0 auto;
+	width: 92%;
+	max-width: 960px;
+	padding: 0;
+	font-size: 18px;
+	line-height: 1.4em;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	color: #1f1f1f;
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	background: #fff;
+	border-bottom: 1px solid #eaeaea;
+	padding: 1em 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.yearProgressWrapper {
+	text-align: left;
+	overflow: hidden;
+	margin: 4em 0;
+}
+
+.yearTotalWrapper {
+	display: block;
+	margin: 0 0 2em 0;
+}
+
+#yearTotalTitle span {
+	color: #aeaeae;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.yearTotal {
+	display: inline-block;
+	font-size: 5em;
+	line-height: 1em;
+}
+
+.yearTotalUnit {
+	display: inline-block;
+	font-weight: bold;
+}
+
+.yearProgressTrack {
+	width: 100%;
+	height: 32px;
+	background: #f0f0f0;
+	border-radius: 16px;
+}
+
+.yearProgress {
+	width: 54.24%;
+	min-width: 32px;
+	height: 100%;
+	background: linear-gradient(to right, #784891, #D43289);
+	border-radius: 16px;
+}
+
+.yearProgress:after {
+	display: block;
+	content: '';
+	width: 24px;
+	height: 24px;
+	border-radius: 12px;
+	background: #fff;
+	position: absolute;
+	right: 4px;
+	top: 4px;
+}
+
+.progressScaleWrapper {
+	overflow: hidden;
+	padding: 2px;
+}
+
+.progressScale {
+	float: left;
+	width: 33.33%;
+	color: #aeaeae;
+}
+
+.progressScale#first {
+	text-align: left;
+}
+
+.progressScale#second {
+	text-align: center;
+}
+
+.progressScale#third {
+	text-align: right;
+}
+
+.weekCardRow {
+	overflow: hidden;
+}
+
+.weekCard {
+	float: left;
+	width: 100%;
+	padding: 1em;
+	border: 1px solid #eaeaea;
+	border-radius: 8px;
+	margin: 8px 0 0 0;
+}
+
+.weekProgressTrack {
+	width: 100%;
+	height: 16px;
+	background: #f0f0f0;
+	border-radius: 8px;
+}
+
+.weekProgress {
+	width: 0;
+	height: 100%;
+	background: linear-gradient(to right, #784891, #D43289);
+	border-radius: 8px;
+}
+
+.weekProgress#week3 {
+	width: 89%;
+}
+
+.weekProgress#week2 {
+	width: 32%;
+}
+
+.weekProgress#week1 {
+	width: 100%;
+}
+
+.completed {
+	background: linear-gradient(to right, #4AADAC, #97E36C);
+}
+
+@media	(min-width: 960px) {
+	.weekCardRow {
+		margin: 0 0 2%;
+	}
+
+	.weekCard {
+		width: 32%;
+		margin: 0 2% 0 0;
+	}
+
+	.weekCard:last-child {
+		margin: 0;
+	}
+}
