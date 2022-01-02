@@ -49,6 +49,9 @@ nav {
 	display: inline-block;
 	font-size: 5em;
 	line-height: 1em;
+	background: linear-gradient(to right, #784891, #D43289);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .yearTotalUnit {
@@ -59,7 +62,7 @@ nav {
 .yearProgressTrack {
 	width: 100%;
 	height: 32px;
-	border: 1px solid #aeaeae;
+	background: #eaeaea;
 	border-radius: 16px;
 }
 
@@ -79,8 +82,8 @@ nav {
 	border-radius: 12px;
 	background: #fff;
 	position: absolute;
-	left: 3.5px;
-	top: 3.5px;
+	left: 4px;
+	top: 4px;
 }
 
 .progressScaleWrapper {
@@ -112,17 +115,12 @@ nav {
 	border: 1px solid #eaeaea;
 }
 
-.weekCardRow {
-	overflow: hidden;
-}
-
 .weekCard {
-	float: left;
 	width: 100%;
 	padding: 1em;
 	border: 1px solid #eaeaea;
 	border-radius: 8px;
-	margin: 8px 0 0 0;
+	margin: 0 0 8px;
 }
 
 .weekCard h4 {
@@ -154,21 +152,12 @@ nav {
 	border-radius: 8px;
 }
 
-.completed {
-	background: linear-gradient(to right, #4AADAC, #97E36C);
+.weekDescription {
+	color: #aeaeae;
+	font-style: italic;
+	margin-bottom: 0;
 }
 
-@media	(min-width: 960px) {
-	.weekCardRow {
-		margin: 0 0 2%;
-	}
-
-	.weekCard {
-		width: 32%;
-		margin: 0 2% 0 0;
-	}
-
-	.weekCard:last-child {
-		margin: 0;
-	}
+.completed {
+	background: linear-gradient(to right, #4AADAC, #97E36C);
 }
